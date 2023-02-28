@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import { AuthContextProvider } from "./context/AuthContext";
 import Home from "./pages/Home"
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <AuthContextProvider>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -20,7 +20,7 @@ function App() {
         <Route path="/login" element={<LogIn/>}></Route>
         <Route path="/signup" element={<SignUp/>}></Route>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
       </AuthContextProvider>
     </div>
   );

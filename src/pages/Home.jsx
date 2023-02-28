@@ -10,7 +10,6 @@ function Home() {
       <Row rowID='1' title="TopRated" fetchURL={requests.requestTopRated}/>
       <Row rowID='2' title="Popular" fetchURL={requests.requestPopular}/>
       <Row rowID='3' title="Trending" fetchURL={requests.requestTrending}/>
-      <Row rowID='4' title="Horror" fetchURL={requests.requestHorror}/>
       <Row rowID='5' title="Upcoming" fetchURL={requests.requestUpcoming}/>
     </div>
   )
